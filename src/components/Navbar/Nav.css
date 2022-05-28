@@ -1,0 +1,63 @@
+nav {
+  margin: 0;
+  padding: 25px 0;
+  background: rgba(235, 0, 0, 0);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-ico a {
+  font-family: var(--font-family);
+  color: var(--color-sec-bg);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-bg);
+}
+
+.nav-links ul,
+.social-link ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+.nav-links ul li a {
+  font-family: var(--sec-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+.nav-links ul li button {
+  padding: 8px 30px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: transparent;
+  color: var(--color-bg);
+}
+.social-link ul li {
+  list-style: none;
+  padding: 0 5px;
+}
+.social-link ul li a {
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+}
+.social-link .cart-ico {
+  margin-left: 25px;
+  font-size: 20px;
+  color: var(--color-text);
+}

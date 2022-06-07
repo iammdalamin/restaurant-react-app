@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AiFillFacebook,
-  AiFillTwitterSquare,
   AiFillGoogleSquare,
   AiFillLinkedin,
+  AiFillTwitterSquare,
 } from "react-icons/ai";
 import { BsHandbag } from "react-icons/bs";
-
+import { CgMenu } from "react-icons/cg";
+import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 export const Nav = () => {
+  const [toggleMenu, setToggleMenu] = useState(true);
   return (
     <nav className="container">
       <div className="nav-ico">
@@ -18,16 +21,16 @@ export const Nav = () => {
       <div className="nav-links">
         <ul>
           <li className="nav-link">
-            <a href="/">Delivery</a>
+            <Link to="/order-page">Delivery</Link>
           </li>
           <li className="nav-link">
-            <a href="/">About us</a>
+            <Link to="/about-page">About us</Link>
           </li>
           <li className="nav-link">
-            <a href="/">Menu</a>
+            <Link to="/menu-page">Menu</Link>
           </li>
           <li className="nav-link">
-            <a href="/">Contacts</a>
+            <Link to="/contact-page">Contacts</Link>
           </li>
           <li className="nav-link">
             <button>Sign In</button>
@@ -71,6 +74,21 @@ export const Nav = () => {
             <BsHandbag />
           </i>
         </a>
+      </div>
+      <div className="res-ico">
+        {toggleMenu ? (
+          <CgMenu
+            onClick={() => {
+              setToggleMenu(false);
+            }}
+          />
+        ) : (
+          <MdClose
+            onClick={() => {
+              setToggleMenu(true);
+            }}
+          />
+        )}
       </div>
     </nav>
   );

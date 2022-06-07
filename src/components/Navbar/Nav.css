@@ -42,6 +42,7 @@ nav {
   border-radius: 25px;
   background: transparent;
   color: var(--color-bg);
+  cursor: pointer;
 }
 .social-link ul li {
   list-style: none;
@@ -60,4 +61,26 @@ nav {
   margin-left: 25px;
   font-size: 20px;
   color: var(--color-text);
+}
+
+.res-ico {
+  display: none;
+}
+
+.res-ico svg {
+  color: var(--color-bg);
+  font-size: 23px;
+}
+
+@media only screen and (max-width: 420px) {
+  .nav-links,
+  .social-link {
+    display: none;
+  }
+  .nav-ico a {
+    font-size: 18px;
+  }
+  .res-ico {
+    display: block;
+  }
 }

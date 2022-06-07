@@ -27,3 +27,10 @@ a:hover:focus {
 .section__padding {
   padding: 4rem 6rem;
 }
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}

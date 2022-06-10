@@ -18,21 +18,21 @@ export const Nav = () => {
       <div className="nav-ico">
         <a href="/">Restaurant</a>
       </div>
-      <div className="nav-links">
+      <div className={!toggleMenu ? "nav-links mobile-nav-links" : "nav-links"}>
         <ul>
-          <li className="nav-link">
+          <li className="nav-link" style={{ "--i-": 1 }}>
             <Link to="/order-page">Delivery</Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link" style={{ "--i-": 2 }}>
             <Link to="/about-page">About us</Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link" style={{ "--i-": 3 }}>
             <Link to="/menu-page">Menu</Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link" style={{ "--i-": 4 }}>
             <Link to="/contact-page">Contacts</Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link" style={{ "--i-": 5 }}>
             <button>Sign In</button>
           </li>
         </ul>

@@ -34,3 +34,9 @@ a:hover:focus {
     padding-left: 35px;
   }
 }
+@media screen and (max-width: 1080px) {
+  .container {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}

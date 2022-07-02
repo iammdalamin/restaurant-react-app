@@ -5,11 +5,14 @@ import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
 import ContactPage from './pages/ContactPage/ContactPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import MenuPage from './pages/MenuPage/MenuPage';
+import { Nav } from './components/Navbar/Nav';
 
 function App() {
   return (
     <>
       <Router>
+      <Nav />
+
         <Routes>
         <Route path="/" element={<Home />} /> 
 

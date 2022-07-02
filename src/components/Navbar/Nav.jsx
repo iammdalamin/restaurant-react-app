@@ -37,30 +37,34 @@ export const Nav = () => {
           </li>
         </ul>
       </div>
-      <div className="social-link">
+      <div
+        className={
+          !toggleMenu ? "social-link mobile-social-link" : "social-link"
+        }
+      >
         <ul>
-          <li>
+          <li style={{ "--i-": 1 }}>
             <a href="/">
               <i>
                 <AiFillFacebook />
               </i>
             </a>
           </li>
-          <li>
+          <li style={{ "--i-": 2 }}>
             <a href="/">
               <i>
                 <AiFillTwitterSquare />
               </i>
             </a>
           </li>
-          <li>
+          <li style={{ "--i-": 3 }}>
             <a href="/">
               <i>
                 <AiFillGoogleSquare />
               </i>
             </a>
           </li>
-          <li>
+          <li style={{ "--i-": 4 }}>
             <a href="/">
               <i>
                 <AiFillLinkedin />

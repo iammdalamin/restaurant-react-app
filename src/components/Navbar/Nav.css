@@ -1,14 +1,14 @@
 nav {
   margin: 0;
   padding: 25px 0;
-  background: rgba(235, 0, 0, 0);
+  background: var(--color-sec-bg);
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-
-  position: relative;
+  box-shadow: -11px -7px 19px 0px #fff;
+  position: sticky;
 }
 
 .nav-ico a {
@@ -71,6 +71,7 @@ nav {
 
 .res-ico {
   display: none;
+  cursor: pointer;
 }
 
 .res-ico svg {
@@ -79,11 +80,6 @@ nav {
 }
 
 @media only screen and (max-width: 960px) {
-  .nav-links,
-  .social-link {
-    display: none;
-  }
-
   .res-ico {
     display: block;
   }
@@ -98,7 +94,8 @@ nav {
     right: -20px;
 
     opacity: 0;
-    background: var(--color-card-bg);
+    background: var(--color-sub-text);
+    color: var(--color-text);
     width: 180px;
     height: 200px;
     border-radius: 50% 0 50% 50%;
@@ -133,6 +130,25 @@ nav {
   }
   .mobile-nav-links ul li a {
     font-size: 20px;
+  }
+  .social-link {
+    display: none;
+  }
+  .social-link ul li {
+    padding: 0 10px;
+    transition: calc(0.5s * var(--i-)) ease-in-out;
+    transform: translateX(50px);
+  }
+
+  .social-link ul li a {
+    font-size: 25px;
+  }
+
+  .mobile-social-link {
+    display: flex;
+  }
+  .mobile-social-link ul li {
+    transform: translateX(0);
   }
 }
 

@@ -6,6 +6,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import MenuPage from './pages/MenuPage/MenuPage';
 import { Nav } from './components/Navbar/Nav';
+import 'react-loading-skeleton/dist/skeleton.css'
 
 function App() {
   return (

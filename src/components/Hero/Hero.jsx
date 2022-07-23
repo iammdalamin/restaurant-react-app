@@ -3,7 +3,7 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <>
+    <div className="hero container">
       <div className="hero-texts">
         <h4 className="bold-text">Big Burger With Cheeze!</h4>
         <p className="hero-text">
@@ -13,8 +13,7 @@ const Hero = () => {
           vero dicta eligendi eum!
         </p>
       </div>
-      ;
-    </>
+    </div>
   );
 };
 

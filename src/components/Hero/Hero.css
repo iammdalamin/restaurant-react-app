@@ -1,0 +1,33 @@
+.hero {
+  background: linear-gradient(
+      162deg,
+      rgba(0, 0, 0, 1) 15%,
+      rgba(0, 0, 0, 0.08204582300079) 100%
+    ),
+    url(./assets/pexels-jonathan-borba-2983101.jpg);
+  background-size: cover;
+  color: var(--color-bg);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-texts {
+  width: 660px;
+  color: var(--color-bg);
+}
+.bold-text {
+  font-size: 55px;
+  font-family: var(--sec-font-family);
+  font-weight: 700;
+  line-height: 75px;
+}
+
+.hero-text {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 26px;
+}

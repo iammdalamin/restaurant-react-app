@@ -10,7 +10,8 @@ const Hero = () => {
           Possimus, voluptatum! Quo asperiores tempora non quasi nisi
           perspiciatis sed ea vel doloribus commodi magnam illum voluptatum
           officia qui explicabo at repellendus beatae, provident possimus nobis
-          vero dicta eligendi eum!
+          vero dicta eligendi eum!!
+          <span>Hello</span>
         </p>
       </div>
     </div>

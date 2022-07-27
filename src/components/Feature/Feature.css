@@ -1,0 +1,21 @@
+.feature-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 80px 0;
+}
+.feature-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.feature-title {
+  font-family: var(--sec-font-family);
+  font-size: 38px;
+}
